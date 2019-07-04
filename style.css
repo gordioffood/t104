@@ -1,0 +1,219 @@
+body {
+
+    background-color: rgb(58, 228, 6);
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'nav nav nav nav''header section segunda div''footer footer footer footer';
+    grid-template-rows: 20vh 70vh 10vh;
+
+
+}
+
+img {
+
+
+
+    width: 100%;
+
+
+}
+
+header {
+
+    grid-area: header;
+
+
+
+
+
+}
+
+nav a {
+
+    color: red;
+    font-size: 50px;
+    text-decoration: none;
+
+
+
+
+
+}
+
+img {
+
+    width: 300px;
+    height: 200px;
+
+
+
+
+
+}
+
+nav a:hover {
+
+
+    color: brown;
+
+
+
+}
+
+nav {
+
+
+    grid-area: nav;
+    background-color: gold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+section {
+
+
+    grid-area: section;
+}
+
+.segunda {
+
+
+
+    grid-area: segunda;
+}
+
+div {
+
+    grid-area: div;
+
+
+
+
+
+}
+
+footer p {
+
+
+
+
+    color: red;
+
+    font-size: 50px;
+    text-decoration: none;
+}
+
+footer {
+
+
+    grid-area: footer;
+
+    background-color: gold;
+    font-size: 30PX;
+
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+
+
+        grid-template-areas: 'nav nav nav nav''header header section section''segunda segunda div div'
+            'footer footer footer footer';
+        grid-Template-rows: 20vh 70vh 40vh;
+
+
+    }
+
+
+    header {
+
+        background-color: red;
+
+
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+
+
+        grid-template-areas: 'nav nav nav nav''header header section section' 'segunda segunda div div'
+            'footer footer footer footer';
+        grid-Template-rows: 20vh 70vh 40vh;
+
+
+    }
+
+
+    header {
+
+        background-color: white;
+
+
+    }
+
+    footer img {
+
+
+
+        width: 100%;
+
+    }
+
+    footer {
+
+
+
+
+        background: url(img/jamaica.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+    body {
+
+
+        grid-template-areas: 'nav nav nav nav'
+            'header header header header'
+            'segunda segunda segunda segunda'
+            'div div div div'
+            'footer footer footer footer';
+        grid-auto-rows: 20vh 70vh 70vh 70vh 100vh;
+
+
+    }
+
+
+    header {
+
+        background-color: black;
+
+
+    }
+
+
+}
